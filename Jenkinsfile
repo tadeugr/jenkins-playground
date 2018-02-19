@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker 'php' }
+    agent { docker 'python' }
     stages {
         stage('build') {
             steps {
-                sh 'php --version'
+                sh 'python --version'
             }
         }
     }
